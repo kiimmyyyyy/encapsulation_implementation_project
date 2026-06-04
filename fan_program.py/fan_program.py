@@ -47,3 +47,24 @@ class Fan:
         print(f"On: {self.get_on()}")
         print("-" * 25)
 
+def TestFan():
+    fan1 = Fan()
+
+    fan1.set_speed(Fan.FAST)
+    fan1.set_radius(10)
+    fan1.set_color("yellow")
+    fan1.set_on(True)
+
+    fan2 = Fan()
+
+    fan2.set_speed(Fan.MEDIUM)
+    fan2.set_radius(5)
+    fan2.set_color("blue")
+    fan2.set_on(False)
+
+    fan1.display_properties("Fan1")
+    fan2.display_properties("Fan2")
+
+if __name__ == "__main__":
+    TestFan()
+
