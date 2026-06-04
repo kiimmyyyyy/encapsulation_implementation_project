@@ -11,3 +11,19 @@ class Fan:
 
     def get_speed(self):
         return self.__speed
+
+    def set_speed(self, speed):
+        if speed in [Fan.SLOW, Fan.MEDIUM, Fan.FAST]:
+            self.__speed = speed
+        else:
+            print"Invalid speed"
+
+    def get_radius(self):
+        return self.__radius
+
+    def get_color(self):
+        return self.__color
+
+    def get_on(self):
+        return self.__on
+
