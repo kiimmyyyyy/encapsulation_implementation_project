@@ -18,10 +18,10 @@ class Pet:
                 self.__animal_type = "Felis catus (Cat)"
             case "hamster" | "rodent":
                 self.__animal_type = "Cricetinae (Hamster)"
-            case "fish" | "goldfish" | "betta":
+            case "fish" | "goldfish" | "blobfish":
                 self.__animal_type = "Actinopterygii (Fish"
-            case "rabbit" | "bunny":
-                self.__animal_type = "Orcyctolagus cuniculus (Rabbit)"
+            case "dog" | "bulldog" | "shih tzu":
+                self.__animal_type = "Canis lupus familiaris (Dog)"
             case _:
                 self.__animal_type = animal_type.strip().capitalize()
 
@@ -63,7 +63,7 @@ def main() -> None:
     try:
         name_in = input("Enter the name of the pet -,- ")
         type_in = input("Enter the type of pet -,- ")
-        age_in = input("Enter the age of the pet  -,- ")
+        age_in = int(input("Enter the age of the pet  -,- "))
 
         print()
         show_loading_bar()
